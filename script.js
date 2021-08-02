@@ -1,37 +1,6 @@
-// const box = {
-//     height: 0,
-//     width: 0,
-//     length: 0,
-//     get size () {
-//       return [ this.height, this.width, this.length ];
-//     },
-//     set size(size) {
-//       [ this.height, this.width, this.length ] = size;
-//     }
-//    };
-
-   // Переписать на конструктор
-
-   function Box() {
-    this.height = 10;
-    this.width = 10;
-    this.length = 10;
-    Object.defineProperty(this, 'size', {
-        get() {
-            return [ this.height, this.width, this.length ];  
-        },
-        set(size) {
-            [ this.height, this.width, this.length ] = size; 
-        },
-    });
-
-}
-const box = new Box();
-box.size = [1, 2, 3];
-console.log(box.size);
 
 
-//2
+//1
 const cities = [
     // массив нашик опшенов для селекта
     {
